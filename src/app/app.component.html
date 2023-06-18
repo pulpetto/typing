@@ -4,7 +4,12 @@
             <h1 class="title has-text-centered">Typing challenge</h1>
 
             <!-- <p class="has-text-centered">Randomly generated text here</p> -->
-            <p class="has-text-centered">{{ randomText }}</p>
+            <p class="has-text-centered">
+                <span
+                    *ngFor="let letter of randomText.split(''); let i = index"
+                    >{{ letter }}</span
+                >
+            </p>
 
             <div class="field">
                 <input

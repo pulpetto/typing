@@ -14,5 +14,11 @@ export class AppComponent {
         if (inputVal === this.randomText) {
             this.successMsg = true;
         }
+
+        // for (let i = 0; i < this.randomText.length; i++) {
+        //     if (inputVal[i] === this.randomText[i]) {
+        //         this.randomText[i];
+        //     }
+        // }
     }
 }
